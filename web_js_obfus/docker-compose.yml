@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  web_js_obfus:
+    build: .
+    image: danisins/web_js_obfus
+    ports:
+      - 12001:10000

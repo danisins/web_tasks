@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  way_of_the_ninja:
+    build: .
+    image: danisins/way_of_the_ninja
+    ports:
+      - 12001:10000

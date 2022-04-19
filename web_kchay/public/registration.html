@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>КЧАУ</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"> 
+    <link rel="stylesheet" type="text/css" href="css/registration.css">
+</head>
+
+
+<body>
+<div class="page">
+<header class="header">
+    <div class="container">
+
+        <div class="header__inner">
+            <h1 class="header_logo">К Ч А У</h1>
+
+            <nav class="nav">
+                <a class="nav_link" href="#">О курсе</a>
+                <a class="nav_link" href="#">Отзывы</a>
+                <a class="nav_link" href="#">Курсы</a>
+                <a class="nav_link" href="#">Вопрос-ответ</a>
+                <a class="nav_link" href="#">Контакты</a>
+            </nav>
+
+            <div class="header_btn">
+                <button class="header_btn_after" onclick="document.location='/registration'">Регистрация</button>
+                <span>|</span>
+                <button class="header_btn_after" onclick="document.location='/'">Вход</button>
+            </div>
+
+            <button class="nav-toggle" id="nav_toggle"  type="button">
+                <span class="nav-toggle__item">Menu</span>
+            </button>
+        </div>
+
+        <div class="header__inner-active" id="header__inner-active">
+            <nav class="nav">
+                <a class="nav_link" href="#">О курсе</a>
+                <a class="nav_link" href="#">Отзывы</a>
+                <a class="nav_link" href="#">Курсы</a>
+                <a class="nav_link" href="#">Вопрос-ответ</a>
+                <a class="nav_link" href="#">Контакты</a>
+            </nav>
+
+            <div class="header_btn">
+                <button class="header_btn_after" onclick="document.location='/registration'">Регистрация</button>
+                <span>|</span>
+                <button class="header_btn_after" onclick="document.location='/'">Вход</button>
+            </div>
+            
+        </div>
+
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+        <div class="section__inner">
+            <div class="section__content">
+            
+                <h1 class="section__header">Регистрация</h1>
+                <span class="header__under">Фамилия*</span>
+                <input class="section__input" type="text" name="surname" form="reg" required>
+
+                <span class="header__under">Имя*</span>
+                <input class="section__input" type="text" name="name" form="reg" required>
+
+                <span class="header__under">Номер вашего телефона*</span>
+                <input class="section__input" type="text" name="tel" form="reg" required>
+
+                <span class="header__under">Пароль*</span>
+                <input class="section__input" type="password" name="pass" form="reg" required> 
+
+                <span class="header__under">Подтвердите пароль*</span>
+                <input class="section__input" type="password" name="pass2" form="reg" required>
+
+
+                <button class="section__go" form="reg">Регистрация</a> 
+            </div><!-- /section__content -->
+        </div><!-- /section__inner -->
+
+        <div class="checkbox">
+                <div class="checkbox-box">    
+                    <input type="checkbox" name="check" form="reg" required>
+                    <p>Согласен с политикой конфиденциальности</p>
+                </div>
+
+                <div class="checkbox_auth">
+                    <p>Вы уже зарегистрированы? Тогда переходите на страницу <a href="/">Авторизация!</a></p>
+                    
+                </div>        
+        </div>
+    </div>    
+</section>
+
+
+
+<section class="bottom">
+
+    <div class="false__bottom">
+        <div class="container">
+
+            <div class="header__inner">
+                <h1 class="header_logo">Курсоед</h1>
+
+                <nav class="nav">
+                    <a class="nav_link" href="#">О курсе</a>
+                    <a class="nav_link" href="#">Отзывы</a>
+                    <a class="nav_link" href="#">Курсы</a>
+                    <a class="nav_link" href="#">Вопрос-ответ</a>
+                    <a class="nav_link" href="#">Контакты</a>
+                </nav>
+
+                <div class="header_btn">
+                <button class="header_btn_after" onclick="document.location='/registration'">Регистрация</button>
+                <span>|</span>
+                <button class="header_btn_after" onclick="document.location='/'">Вход</button>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="bottom__truth">
+        <div class="container">
+            <div class="bottom__iner">
+                <a class="bottom__navigation" href="#">Пользовательское соглашение</a>
+                <p>2022 © Project by dani_sins</p>
+                <a class="bottom__navigation" href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+</div><!-- /page -->
+<form action="/reg" method="post" id="reg">
+</form>
+<script src ="js/main.js"></script>
+</body>
+</html>
+

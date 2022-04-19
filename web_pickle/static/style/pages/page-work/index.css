@@ -1,0 +1,32 @@
+/* Элементы страницы */
+@import '../../interface.css';
+@import '../../footer.css';
+@import '../../header.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&display=swap');
+
+/* Секции страницы */
+body {
+}
+
+
+section {
+    padding-top: unset;
+    padding-bottom: unset;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content {
+    margin: 0 18% 0 18%;
+}
+
+
+
+
+
+
+
+
+

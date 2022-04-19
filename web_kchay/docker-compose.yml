@@ -1,0 +1,8 @@
+kursoed_nginx:
+    image: nginx:latest
+    ports:
+        - "31337:80"
+    volumes:
+        - ./public:/public
+        - ./site.conf:/etc/nginx/conf.d/default.conf
+        - .htpasswd:/etc/nginx/conf.d/.htpasswd

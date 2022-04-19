@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>КЧАУ</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"> 
+    <link rel="stylesheet" type="text/css" href="css/auth.css">
+</head>
+
+
+<body>
+<div class="page">
+<header class="header">
+    <div class="container">
+
+        <div class="header__inner">
+            <h1 class="header_logo">К Ч А У</h1>
+
+            <nav class="nav">
+                <a class="nav_link" href="#">О курсе</a>
+                <a class="nav_link" href="#">Отзывы</a>
+                <a class="nav_link" href="#">Курсы</a>
+                <a class="nav_link" href="#">Вопрос-ответ</a>
+                <a class="nav_link" href="#">Контакты</a>
+            </nav>
+
+            <div class="header_btn">
+                <button class="header_btn_after" onclick="document.location='/registration'">Регистрация</button>
+                <span>|</span>
+                <button class="header_btn_after" onclick="document.location='/'">Вход</button>
+            </div>
+
+            <button class="nav-toggle" id="nav_toggle"  type="button">
+                <span class="nav-toggle__item">Menu</span>
+            </button>
+        </div>
+
+        <div class="header__inner-active" id="header__inner-active">
+            <nav class="nav">
+                <a class="nav_link" href="#">О курсе</a>
+                <a class="nav_link" href="#">Отзывы</a>
+                <a class="nav_link" href="#">Курсы</a>
+                <a class="nav_link" href="#">Вопрос-ответ</a>
+                <a class="nav_link" href="#">Контакты</a>
+            </nav>
+
+            <div class="header_btn">
+                <button class="header_btn_after" onclick="document.location='/registration'">Регистрация</button>
+                <span>|</span>
+                <button class="header_btn_after" onclick="document.location='/'">Вход</button>
+            </div>
+            
+        </div>
+
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+        <div class="section__inner">
+            <div class="section__content">
+                <h1 class="section__header">Авторизация</h1>
+                <span class="header__under">Введите почту</span>
+                <input class="section__input" type="text" name="mail" form="auth">
+                <span class="header__under">Введите пароль</span>
+                <input class="section__input" type="password" name="pass" form="auth">
+                <button class="section__go" form="auth">Войти</button> 
+                <a href="/registration">Регистрация</a>
+                <a href="/registration">Забыли пароль?</a>
+            </div>
+        </div>
+    </div>    
+</section>
+
+
+
+<section class="bottom">
+
+    <div class="false__bottom">
+        <div class="container">
+
+            <div class="header__inner">
+                <h1 class="header_logo">Курсоед</h1>
+
+                <nav class="nav">
+                    <a class="nav_link" href="#">О курсе</a>
+                    <a class="nav_link" href="#">Отзывы</a>
+                    <a class="nav_link" href="#">Курсы</a>
+                    <a class="nav_link" href="#">Вопрос-ответ</a>
+                    <a class="nav_link" href="#">Контакты</a>
+                </nav>
+
+                <div class="header_btn">
+                <button class="header_btn_after" onclick="document.location='/registration'">Регистрация</button>
+                <span>|</span>
+                <button class="header_btn_after" onclick="document.location='/'">Вход</button>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="bottom__truth">
+        <div class="container">
+            <div class="bottom__iner">
+                <a class="bottom__navigation" href="#">Пользовательское соглашение</a>
+                <p>2022 © Project by dani_sins</p>
+                <a class="bottom__navigation" href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+<!-- dani, не забудь убрать бекапы (Саныч) -->
+</section>
+
+
+</div><!-- /page -->
+<form action="/auth" method="post" id="auth">
+</form>
+<script src ="js/main.js"></script>
+</body>
+</html>
+

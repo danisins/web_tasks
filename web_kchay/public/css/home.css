@@ -1,0 +1,388 @@
+.section__input button{
+  cursor: pointer;
+}
+
+
+.page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+/*section*/
+.section{
+    padding: 30px 20px;
+    flex: 1;
+}
+/*section*/
+
+
+/*section__subtitle*/
+.breadcrumbs{
+  display: flex;
+  column-gap: 5px;
+}
+.breadcrumbs__page{
+  color: #000;
+  text-decoration: none;
+  font-size: 15px;
+}
+.breadcrumbs__header{
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+/* /section__subtitle*/
+
+
+/*section__main__btn*/
+.section__main__btn{
+  display: flex;
+  column-gap: 60px;
+}
+.section__main__btn p{
+  margin: 0;
+  cursor: pointer;
+}
+/* /section__main__btn*/
+
+
+/*section__main-active*/
+.section__main-active{
+  margin-top: 50px;
+  display: flex;
+}
+/* /section__main-active*/
+
+
+/*personal__information*/
+.personal__information{
+  column-gap: 50px;
+}
+.personal__foto{
+  position: relative;
+  width: 181px;
+  height: 181px;
+  border-radius: 50%;
+  background: url('../img/personal__foto.png');
+  background-size: cover;
+}
+.personal__data{
+    display: flex;
+    justify-content: center;
+}
+.section__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.section__header{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 30px;
+}
+.header__under{
+    font-size: 17px;
+    left: 0;
+    margin-bottom: 10px;
+}
+.section__input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 310px;
+    height: 40px;
+    border: 1px solid #D8D8D8;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    z-index: 1;
+} 
+.input__iner {
+  border: none;
+  font-size: 15px;
+  color: #858585;
+}
+/* /personal__information*/
+
+
+
+/*my__courses*/
+.my__courses{
+  display: flex;
+  flex-direction: column;
+}
+.courses__nomber{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 95px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 18px #E1E1E1;
+  overflow: hidden;
+}
+.courses__nomber:last-child{
+  margin-bottom: 0;
+}
+.courses__nomber__icon{
+  min-width: 95px;
+
+}
+.courses__nomber__header{
+  align-items: center;
+  width: 100%;
+  height: 46px;
+  padding: 0 20px;
+  border-right: 1px solid #D9D9D9;
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  margin: auto 0;
+}
+.courses__nomber__header-inner{
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.courses__nomber__result{
+  width: 220px;
+  margin: auto 0;
+  padding: 0 20px;
+}
+/* /my__courses*/
+
+
+
+/*my__certificates*/
+.certificates{
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 20px;
+  flex-direction: row
+}
+
+.certificates img{
+  width: calc(33.33% - 13.33px);
+  height: auto;
+}
+/* /my__certificates*/
+
+
+@media(max-width: 1240px){
+
+  /* my__certificates*/
+  .certificates img{
+    width: calc(50% - 10px);
+  }
+  /* /my__certificates*/
+}
+
+@media(max-width: 1000px){
+  
+  /*my__courses*/
+  .my__courses{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+    flex-direction: row
+  }
+  .courses__nomber{
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .courses__nomber__header{
+    width: auto;
+    margin: 20px;
+    padding: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D9D9D9;
+    border-right: 0;
+  }
+  .courses__nomber__result{
+    margin-bottom: 10px;
+  }
+  /* /my__courses*/
+}
+
+@media(max-width: 850px){
+
+  /* my__certificates*/
+  .certificates img{
+    width: 100%;
+  }
+  /* /my__certificates*/
+}
+
+@media(max-width: 600px){
+
+  /*section__main__btn*/
+  .section__main__btn{
+    column-gap: 30px;
+    justify-content: center;
+  }
+  /* /section__main__btn*/
+
+
+  /*personal__information*/
+  .personal__information{
+    flex-direction: column;
+  }
+  .personal__data{
+    margin-top: 20px;
+  }
+  .personal__foto{
+    margin:0 auto;
+  }
+  /* /personal__information*/
+
+  /*my__courses*/
+  .courses__nomber{
+    width: 100%;
+  }
+  /* /my__courses*/
+}
+
+
+@media(max-width: 500px){
+
+  /*section__main__btn*/
+  .section__main__btn{
+    column-gap: 15px;
+    justify-content: normal;
+    flex-wrap:wrap;
+  }
+  .section__main__btn p{
+    margin-bottom: 10px;
+  }
+  /* /section__main__btn*/
+
+
+  /*personal__information*/
+  .personal__foto{
+    margin: 0;
+    justify-content: normal;
+  }
+  /* /personal__information*/
+
+  /*personal__data*/
+  .personal__data{
+    margin: 20px 0 0 0;
+    justify-content: normal;
+  }
+  /* /personal__data*/
+}
+
+@media(max-width: 400px){
+
+  /*breadcrumbs*/
+  .breadcrumbs__page, .breadcrumbs__line{
+    font-size: 12px;
+  }
+  .breadcrumbs__header{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 35px;
+  }
+  /* /breadcrumbs*/
+
+  /*section__main__btn*/
+  .section__main__btn p{
+    font-size: 15px;
+  }
+  /*section__main__btn*/
+
+  /*personal__information*/
+  .header__under{
+    font-size: 15px;
+  }
+  .input__iner{
+    font-size: 12px;
+  }
+  /* /personal__information*/
+
+
+  /*my__courses*/
+  .courses__nomber__header, .courses__nomber__result{
+    font-size: 15px;
+  }
+  /* /my__courses*/
+}
+
+@media(max-width: 360px){
+
+  /*section__main-active*/
+  .section__main-active {
+    margin-top: 30px;
+  }
+  /*section__main-active*/
+
+
+  /*breadcrumbs*/
+  .breadcrumbs__header{
+    font-size: 30px;
+  }
+  /* /breadcrumbs*/
+
+  /*personal__information*/
+    .personal__foto{
+    width: 140px;
+    height: 140px;
+  }
+  .section__input{
+    width: 250px;
+  }
+  /* /personal__information*/
+}
+
+@media(max-width: 300px){
+
+  /*breadcrumbs*/
+  .breadcrumbs__page, .breadcrumbs__line{
+    font-size: 10px;
+  }
+  .breadcrumbs__header{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  /* /breadcrumbs*/
+
+  /*section__main__btn*/
+  .section__main__btn p{
+    font-size: 12px;
+  }
+  /* /section__main__btn*/
+  
+  /*personal__information */
+  .personal__foto{
+    width: 100px;
+    height: 100px;
+  }
+  .header__under{
+    font-size: 12px;
+  }
+  .section__input{
+    width: 190px;
+  }
+  .input__iner{
+    font-size: 10px;
+  }
+  /* /personal__information */
+
+  /*my__courses*/
+  .courses__nomber__header{
+    margin: 10px;
+  }
+  .courses__nomber__result{
+    padding: 0 10px;
+  }
+  .courses__nomber__header, .courses__nomber__result{
+    font-size: 12px;
+  }
+  /* /my__courses*/
+}

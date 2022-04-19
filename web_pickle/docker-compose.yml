@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  pickle:
+    build: .
+    image: danisins/pickle
+    ports:
+      - 31337:31337
